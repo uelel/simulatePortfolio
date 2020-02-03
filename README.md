@@ -37,9 +37,9 @@ XetraGold = {'name' : 'Xetra Gold', 'data' : {datetime.date(2015, 1, 20): 35.76,
 simulatePortfolio([[iSharesSP500, 0.7, 2.0, 0.00038],
                    [XetraGold, 0.3, 2.0, 0.00038]],
                   currency = 'EUR',
-                  tradingFeePerYear = 2.5,
                   startDate = datetime.date(2015, 2, 3),
                   endDate = datetime.date(2019, 12, 30),
+                  tradingFeePerYear = 2.5,
                   startInv = 2500,
                   monthInv = 120,
                   monthsPerTrade = 4,
@@ -69,7 +69,11 @@ The actual data points consist of `datetime.date` objects coupled with instrumen
 - It is possible to load **daily** or **monthly** prices
 - Monthly prices should be coupled to the same day in month for all instruments (e.g. all prices are defined on the _1st day of month_)
 
-#### 2. Portfolio
+#### 3. Currency
+
+Currency symbol for informative purposes.
+
+####
 
 ## Example
 
