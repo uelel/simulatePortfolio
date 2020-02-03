@@ -19,7 +19,7 @@ The main goal of this project is to provide basic metrics of **_long(er)-term in
  
 - it is necessary to define **_instrument weights_** in portfolio and whether to preserve weights during the simulation
 
-- these resulting stats are plotted after simulation has finished:
+- these resulting stats are plotted after the simulation has finished:
   - equity and investment curves, return over investment
   - remaining cash after each purchase
   - total fees / investment percentage
