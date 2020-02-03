@@ -65,7 +65,7 @@ instrB = {'name' : 'Xetra Gold', 'data' : {datetime.date(2015, 1, 20): 35.76, da
 ```
 
 Historical data are nested `dict` with `name` and `data` keys.\
-The actual data points consist of `datetime.date` objects coupled with instrument prices.\
+The actual data points consist of `datetime.date` objects coupled with instrument prices.
 - It is possible to load **daily** or **monthly** prices
 - Monthly prices should be coupled to the same day in month for all instruments (e.g. all prices are defined on the _1st day of month_)
 
