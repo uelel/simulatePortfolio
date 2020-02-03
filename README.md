@@ -17,7 +17,7 @@ The main goal of this project is to provide basic metrics of **_long(er)-term in
   - **_relative fee_**: fraction of purchased volume during purchase of one instrument
   - **_connection fee_**: absolute fee per calendar year per one instrument
  
-- it is necessary to define instrument weights in portfolio and whether to preserve weights during the simulation
+- it is necessary to define **_instrument weights_** in portfolio and whether to preserve weights during the simulation
 
 - these resulting stats from simulation are plotted:
   - equity and investment curves, return over investment
