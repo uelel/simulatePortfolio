@@ -6,12 +6,24 @@ The main goal of this project is to provide basic metrics of **_long(er)-term in
 
 ## Features
 
-- the class was developed for tracking **_long(er)-term investments_** with the time horizon at least several months
+- the simulator was developed for tracking **_long(er)-term investments_** with the time horizon at least several months
 
-- the class implements two kinds of instrument purchases:
+- the simulator implements two kinds of instrument purchases:
   - **_initial purchase_**: of all instruments during the start date
-  - **_regular purchases_**: of defined number of instruments at the defined monthly intervals. 
-  
+  - **_regular purchases_**: of defined number of instruments at defined monthly intervals. 
+ 
+- the simulator acknowledges commission scheme typical for brokerage services:
+  - **_absolute fee_**: absolute fee during purchase of one instrument
+  - **_relative fee_**: fraction of purchased volume during purchase of one instrument
+  - **_connection fee_**: absolute fee per calendar year per one instrument
+ 
+- it is necessary to define instrument weights in portfolio and whether to preserve weights during the simulation
+
+- these resulting stats from simulation are plotted:
+  - equity and investment curves, return over investment
+  - remaining cash after each purchase
+  - total fees / investment percentage
+  - instrument weights in portfolio after each purchase
 
 ## Usage
 
