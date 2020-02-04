@@ -51,17 +51,7 @@ simulatePortfolio([[iSharesSP500, 0.7, 2.0, 0.00038],
                   instrumentsPerTrade = 1)
 ```
 
-#### 1. Portfolio
-
-```python
-[[iSharesSP500, 0.7, 2.0, 0.00038],
- [XetraGold, 0.3, 2.0, 0.00038]]
-```
-
-Portfolio is `list` of some instruments.\
-Each instrument takes the form `[historical data, weight, absolute fee, relative fee]`
-
-#### 2. Historical data
+#### 1. Historical data
 
 ```python
 instrA = {'name' : 'iShares SP500', 'data' : {datetime.date(2015, 1, 1): 158.93, datetime.date(2015, 2, 1): 160.48, datetime.date(2015, 3, 1): 163.74, datetime.date(2015, 4, 1): 167.06, datetime.date(2015, 5, 1): 166.15, datetime.date(2015, 6, 1): 163.35, datetime.date(2015, 7, 1): 163.69, datetime.date(2015, 8, 1): 161.68, datetime.date(2015, 9, 1): 162.54}}
@@ -72,6 +62,16 @@ Historical data are nested `dict` with `name` and `data` keys.\
 The actual data points consist of `datetime.date` objects coupled with instrument prices per share.
 - It is possible to load **daily** or **monthly** prices
 - Monthly prices should be coupled to the same day in month for all instruments (e.g. all prices are defined on the _1st day of month_)
+
+#### 2. Portfolio
+
+```python
+[[iSharesSP500, 0.7, 2.0, 0.00038],
+ [XetraGold, 0.3, 2.0, 0.00038]]
+```
+
+Portfolio is `list` of some instruments.\
+Each instrument takes the form `[historical data, weight, absolute fee, relative fee]`
 
 #### 3. Currency
 
