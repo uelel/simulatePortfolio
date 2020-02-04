@@ -28,12 +28,6 @@ The instrument weights are aimed to be preserved during simulation by solving of
 \
 ![](https://latex.codecogs.com/gif.latex?\mathrm{regularInv.}&space;=&space;\sum_N^{&space;}\mathrm{noShares}_j\cdot&space;\mathrm{price}_j\cdot&space;\left(1&plus;\mathrm{relFee}_j&space;\right&space;)&space;\&space;&plus;&space;\&space;\mathrm{absFee}_j,&space;j&space;=&space;1,...,N)
 
-- resulting stats are plotted when the simulation finish:
-  - _equity and investment curves, return over investment_
-  - _remaining cash after each purchase_
-  - _total fees / investment percentage_
-  - _instrument weights in portfolio after each purchase_
-
 ___
 
 ## Usage
