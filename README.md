@@ -75,25 +75,51 @@ The actual data points consist of `datetime.date` objects coupled with instrumen
 
 #### 3. Currency
 
+```python
+currency = 'EUR'
+```
+
 Currency symbol for informative purposes.
 
 #### 4. Start, end date
+
+```python
+startDate = datetime.date(2015, 2, 3),
+endDate = datetime.date(2019, 12, 30)
+```
 
 `datetime.date` objects defining simulation timespan.
 
 #### 5. Connection fee
 
+```python
+connectionFeePerYear = 2.5
+```
+
 Absolute fee per calendar year.
 
 #### 6. Initial and monhtly contributions
+
+```python
+initCont = 2500,
+monthCont = 120
+```
 
 Contributed amount for initial and regular investments, respectively.
 
 #### 7. Months per trade
 
+```python
+monthsPerTrade = 4
+```
+
 How many months should be between regular investments.
 
 #### 8. Instrument per trade
+
+```python
+instrumentsPerTrade = 1
+```
 
 How many instruments should be traded during regular investments.
 
