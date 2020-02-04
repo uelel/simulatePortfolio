@@ -140,4 +140,4 @@ ___
 ## Known issues
 
 - plots may be distrorted when plotted from terminal.\
-  Use `jupyter notebook` or difference `matplotlib` backend.
+  Use `jupyter notebook` or different `matplotlib` backend.
