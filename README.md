@@ -4,6 +4,8 @@ simulatePortfolio is a Python class that upon instantiation simulates performanc
 
 The main goal of this project is to provide basic metrics of **_long(er)-term investments_** based on the historical data and investment strategy.
 
+___
+
 ## Features
 
 - the simulator was developed for tracking **_long(er)-term investments_** with the time horizon of at least several months
@@ -29,6 +31,8 @@ The instrument weights are aimed to be preserved during simulation by solving of
   - _remaining cash after each purchase_
   - _total fees / investment percentage_
   - _instrument weights in portfolio after each purchase_
+
+___
 
 ## Usage
 
@@ -123,5 +127,13 @@ instrumentsPerTrade = 1
 
 How many instruments should be traded during regular investments.
 
+___
+
 ## Example
 
+___
+
+## Known issues
+
+- plots may be distrorted when plotted from terminal.\
+  Use `jupyter notebook` or difference `matplotlib` backend.
