@@ -8,9 +8,9 @@ The main goal of this project is to provide basic metrics of **_long(er)-term in
 
 - the simulator was developed for tracking **_long(er)-term investments_** with the time horizon of at least several months
 
-- the simulator implements two kinds of instrument purchases:
+- the simulator implements **_initial_** and **_monthly contributions_** and two kinds of instrument purchases:
   - **_initial purchase_**: of all instruments during the start date
-  - **_regular purchases_**: of defined number of instruments at defined monthly intervals. 
+  - **_regular purchases_**: of defined number of instruments at defined monthly intervals.
  
 - the simulator acknowledges commission scheme typical for brokerage services:
   - **_absolute fee_**: absolute fee during purchase of one instrument
@@ -42,12 +42,11 @@ simulatePortfolio([[iSharesSP500, 0.7, 2.0, 0.00038],
                   currency = 'EUR',
                   startDate = datetime.date(2015, 2, 3),
                   endDate = datetime.date(2019, 12, 30),
-                  tradingFeePerYear = 2.5,
-                  startInv = 2500,
-                  monthInv = 120,
+                  connectionFeePerYear = 2.5,
+                  initCont = 2500,
+                  monthCont = 120,
                   monthsPerTrade = 4,
-                  instrumentsPerTrade = 1,
-                  preserveWeights = True)
+                  instrumentsPerTrade = 1)
 ```
 
 #### 1. Portfolio
@@ -76,7 +75,25 @@ The actual data points consist of `datetime.date` objects coupled with instrumen
 
 Currency symbol for informative purposes.
 
-#### 4.
+#### 4. Start, end date
+
+`datetime.date` objects defining simulation timespan.
+
+#### 5. Connection fee
+
+Absolute fee per calendar year.
+
+#### 6. Initial and monhtly contributions
+
+Contributed amount for initial and regular investments, respectively.
+
+#### 7. Months per trade
+
+How many months should be between regular investments.
+
+#### 8. Instrument per trade
+
+How many instruments should be traded during regular investments.
 
 ## Example
 
