@@ -57,7 +57,7 @@ simulatePortfolio([[iSharesSP500, 0.7, 2.0, 0.00038],
 ```
 
 Portfolio is `list` of some instruments.\
-Each instrument takes the form `[historicalData, weight, absoluteFee, relativeFee]`
+Each instrument takes the form `[historical data, weight, absolute fee, relative fee]`
 
 #### 2. Historical data
 
