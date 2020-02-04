@@ -133,7 +133,7 @@ ___
 
 from the previous code:
 
-![Plot example](plot.png)
+![](plot.png)
 
 ___
 
