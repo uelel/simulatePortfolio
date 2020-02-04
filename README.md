@@ -1,3 +1,5 @@
+![](logo.png)
+
 # simulatePortfolio
 
 simulatePortfolio is a Python class that upon instantiation simulates performance of portfolio with **_stock instruments_**.
