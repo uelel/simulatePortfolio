@@ -18,7 +18,7 @@ The main goal of this project is to provide basic metrics of **_long(er)-term in
   - **_connection fee_**: absolute fee per calendar year
  
 - it is necessary to define **_instrument weights_** in portfolio.\
-The instrument weights are aimed to be preserved during simulation by regular solving of this SOE:\
+The instrument weights are aimed to be preserved during simulation by solving of this SOE regularly:\
 \
 ![](https://latex.codecogs.com/gif.latex?\mathrm{weight}_i&space;=&space;\frac{\left(\mathrm{noShares}_{i0}&space;&plus;&space;\mathrm{noShares}_i\right&space;)\cdot&space;\mathrm{price}_i}{\sum_{N}^{&space;}\left(\mathrm{noShares}_{j0}&space;&plus;&space;\mathrm{noShares}_j\right&space;)\cdot&space;\mathrm{price}_j},i=1,...,N)\
 \
