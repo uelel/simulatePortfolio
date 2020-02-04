@@ -19,7 +19,8 @@ The main goal of this project is to provide basic metrics of **_long(er)-term in
  
 - it is necessary to define **_instrument weights_** in portfolio.\
 The instrument weights are aimed to be preserved during simulation by regular solving of this SOE:\
-![](https://latex.codecogs.com/gif.latex?\mathrm{weight}_i&space;=&space;\frac{\left(\mathrm{noShares}_{i0}&space;&plus;&space;\mathrm{noShares}_i\right&space;)\cdot&space;\mathrm{price}_i}{\sum_{N}^{&space;}\left(\mathrm{noShares}_{j0}&space;&plus;&space;\mathrm{noShares}_j\right&space;)\cdot&space;\mathrm{price}_j},i=1,...,N)
+\
+![](https://latex.codecogs.com/gif.latex?\mathrm{weight}_i&space;=&space;\frac{\left(\mathrm{noShares}_{i0}&space;&plus;&space;\mathrm{noShares}_i\right&space;)\cdot&space;\mathrm{price}_i}{\sum_{N}^{&space;}\left(\mathrm{noShares}_{j0}&space;&plus;&space;\mathrm{noShares}_j\right&space;)\cdot&space;\mathrm{price}_j},i=1,...,N)\
 ![](https://latex.codecogs.com/gif.latex?\mathrm{regularInv.}&space;=&space;\sum_N^{&space;}\mathrm{noShares}_j\cdot&space;\mathrm{price}_j\cdot&space;\left(1&plus;\mathrm{relFee}_j&space;\right&space;)&space;\&space;&plus;&space;\&space;\mathrm{absFee}_j,&space;j&space;=&space;1,...,N)
 
 - resulting stats are plotted when the simulation finish:
