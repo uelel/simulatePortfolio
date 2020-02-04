@@ -119,7 +119,7 @@ monthsPerTrade = 4
 
 How many months should be between regular investments.
 
-#### 8. Instrument per trade
+#### 8. Instruments per trade
 
 ```python
 instrumentsPerTrade = 1
