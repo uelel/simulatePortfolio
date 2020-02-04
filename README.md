@@ -15,9 +15,12 @@ The main goal of this project is to provide basic metrics of **_long(er)-term in
 - the simulator acknowledges commission scheme typical for brokerage services:
   - **_absolute fee_**: absolute fee during purchase of one instrument
   - **_relative fee_**: fraction of purchased volume during purchase of one instrument
-  - **_connection fee_**: absolute fee per calendar year per one instrument
+  - **_connection fee_**: absolute fee per calendar year
  
-- it is necessary to define **_instrument weights_** in portfolio and whether to preserve weights during the simulation
+- it is necessary to define **_instrument weights_** in portfolio.\
+The instrument weights are aimed to be preserved during simulation by regular solving of this SOE:\
+![](https://latex.codecogs.com/gif.latex?\mathrm{weight}_i&space;=&space;\frac{\left(\mathrm{noShares}_{i0}&space;&plus;&space;\mathrm{noShares}_i\right&space;)\cdot&space;\mathrm{price}_i}{\sum_{N}^{&space;}\left(\mathrm{noShares}_{j0}&space;&plus;&space;\mathrm{noShares}_j\right&space;)\cdot&space;\mathrm{price}_j},i=1,...,N)
+![](https://latex.codecogs.com/gif.latex?\mathrm{regularInv.}&space;=&space;\sum_N^{&space;}\mathrm{noShares}_j\cdot&space;\mathrm{price}_j\cdot&space;\left(1&plus;\mathrm{relFee}_j&space;\right&space;)&space;\&space;&plus;&space;\&space;\mathrm{absFee}_j,&space;j&space;=&space;1,...,N)
 
 - resulting stats are plotted when the simulation finish:
   - _equity and investment curves, return over investment_
@@ -73,7 +76,7 @@ The actual data points consist of `datetime.date` objects coupled with instrumen
 
 Currency symbol for informative purposes.
 
-####
+#### 4.
 
 ## Example
 
