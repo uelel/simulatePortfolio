@@ -90,8 +90,8 @@ Currency symbol for informative purposes.
 #### 4. Start, end date
 
 ```python
-startDate = datetime.date(2015, 2, 3),
-endDate = datetime.date(2019, 12, 30)
+startDate = datetime.date(2019, 1, 1),
+endDate = datetime.date(2020, 1, 1)
 ```
 
 `datetime.date` objects defining simulation timespan.
@@ -108,7 +108,7 @@ Absolute fee per calendar year.
 
 ```python
 initCont = 2500,
-monthCont = 120
+monthCont = 200
 ```
 
 Contributed amount for initial and regular investments, respectively.
@@ -116,7 +116,7 @@ Contributed amount for initial and regular investments, respectively.
 #### 7. Months per trade
 
 ```python
-monthsPerTrade = 4
+monthsPerTrade = 2
 ```
 
 How many months should be between regular investments.
