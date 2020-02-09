@@ -121,7 +121,7 @@ How many months should be between regular investments.
 instrumentsPerTrade = 1
 ```
 
-How many instruments should be traded during regular investments.
+How many instruments should be traded during each regular investment.
 
 ___
 
